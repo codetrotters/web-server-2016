@@ -1,7 +1,44 @@
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('assets\images\background-image.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.img-full{
+  min-width:100%;
+}
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+.navbar-default .navbar-header > p{
+  font-size: 20px;
+  color:white;
+}
+.container-fluid {
+  background-color: lightslategray;
+}
+.navbar-default .navbar-nav > li > a{
+  color:white;
+  font-size: 20px;
+}
 .navbar-brand {
   padding: 10px;
 }
-
+#introduction {
+  text-align: center;
+}
+.buttons-links{
+  margin-left: 613px;
+}
 .navbar-brand > img {
   width: 120px;
   height: 30px;
@@ -11,4 +48,30 @@
   width: 400px;
   height: 300px;
   position: relative;
+}
+#footer {
+  background-color: #668284 ;
+  color: #ffffff ;
+  clear: both;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+}
+
+#footer > p {
+    position: relative;
+    padding-top: 15px;
+
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
 }

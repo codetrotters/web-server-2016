@@ -1,33 +1,298 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Javascript Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turn App</title>
   <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="assets/css/app.css">
-  <script type="text/javascript" src="assets/js/jquery.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery.js" charset="utf-8"></script>
+  <script src="assets/js/bootstrap.js" charset="utf-8"></script>
+  <script src="assets/js/script.js" charset="utf-8"></script>
+
 </head>
+
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <img alt="Brand" src="assets/images/logo.png">
-        </a>
+
+  <!--Navbar-->
+  <header>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img id="brand-image" alt="Brand" src="assets/images/lalalala turn.png" width="40px">
+            <p id="brand-paragraph">
+              Turn.App
+            </p>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="example">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#about-us">About Us</a></li>
+            <li><a href="#log-in">Log In</a></li>
+            <li><a href="#create-an-account">Create Account</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" id="home">Home</a></li>
-          <li><a href="#" id="about">About</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
     </div>
-  </nav>
-  <div class="container">
-    <!-- Container -->
-  </div>
+
+      <!--Main container -->
+
+      <div id="maincontainer-image-back" class="container-fluid">
+        <div class="row main-container-row">
+
+          <div class="col-md-6 col-xs-12">
+            <h1 class="h1-turnapp">Turn.App</h1>
+            <p class="main-paragraph">
+              Turn.App is a customer service optimization system that allows its users to monitor their turn on real time.
+            </p>
+            <a id="get-button" class="btn btn-primary btn-block" href="get-turnapp.html">
+                Get Turn.App Now
+              </a>
+          </div>
+
+          <!--LogIn -->
+
+          <div id="log-in" class="col-md-6 col-xs-12">
+            <h1 class="h1-login-turnapp">Log In</h1>
+
+            <div class="account-wall">
+              <form class="form-signin">
+                <div id="email-login" class="col-md-6 col-md-offset-3">
+                  <input type="text" class="form-control" placeholder="Email" required autofocus>
+                </div>
+                <div class="col-md-6 col-md-offset-3">
+                  <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div id="sign-in-button" class="col-md-6 col-md-offset-3">
+                  <a href="turn-app.html" class="sign-in-btn btn btn-lg btn-primary btn-block sign-in-button">
+                          Log In
+                      </a>
+                  <!-- <button class="sign-in-btn btn btn-lg btn-primary btn-block sign-in-button" type="submit">
+                        Log in</button> -->
+                </div>
+                <div id="check-box" class="col-md-6 col-md-offset-3">
+                  <label class="checkbox">
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <div id="need-help" class="col-md-6 col-md-offset-3">
+                  <a href="#">Need help? </a>
+                </div>
+                <div id="create-account" class="col-md-6 col-md-offset-3">
+                  <a href="get-turnapp.html">Create an account </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About us -->
+      <div id="about-us" class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 id="aboutus-h1">About us</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <img class="img-responsive center-block" src="assets/images/group.svg" alt="example icon" width="50px" />
+            <p class="aboutus-p">
+              Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse
+              integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+            </p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <img class="img-responsive center-block" src="assets/images/group.svg" alt="example icon" width="50px" />
+            <p class="aboutus-p">
+              Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse
+              integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+            </p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <img class="img-responsive center-block" src="assets/images/group.svg" alt="example icon" width="50px" />
+            <p class="aboutus-p">
+              Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse
+              integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!--How does it work? -->
+      <div class="container">
+        <div id="how-doesit-work" class="row">
+          <div class="col-md-6 col-xs-12 ">
+            <h3 id="howdoesitwork-h3">How does it work</h3>
+            <img src="assets/images/mockup.turn.png" alt="Mock Up Turn.App" width="400px" class=" img-responsive center-block" />
+          </div>
+          <div class="col-md-3 col-xs-12" style="padding-top: 10%">
+            <h5 class="howdoesitwork-h5">Create an Account.</h5>
+            <p class="howdoesitwork-p">
+              Creating an account with us is easy!
+              <br>
+              <br> Go to "Get Turn.App Now" and press the button, this will take you a register page.
+            </p>
+          </div>
+          <div class="col-md-3 col-xs-12" style="padding-top: 9%; padding-left: 20px;">
+            <h5 class="howdoesitwork-h5">Manage turns from the web.</h5>
+            <p class="howdoesitwork-p">
+              Once you have created your account, you will be able to access the system of turns management. With this system you will be able to notify your patients when their turn is approximating.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Get an account -->
+      <div id="create-an-account" class="container-fluid">
+        <div class="row">
+          <div id="getaccount-col12" class="col-xs-12">
+            <img src="assets/images/turn.app.square.JPG" alt="Turn.App Logo" width="100px" class="img-rounded img-responsive center-block" />
+            <h1 id="create-account-h1">Create an account</h1>
+          </div>
+        </div>
+        <div class="row">
+          <!--Name input-->
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputName1">Name | Last Name</label>
+              <input type="email" class="form-control form-width" id="exampleInputName1" placeholder="Enter Name and Last Name">
+            </fieldset>
+          </div>
+          <!--end of name input -->
+          <!--username input -->
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputUsername1">Create Username</label>
+              <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Create Username">
+            </fieldset>
+          </div>
+        </div>
+        <!--end username input-->
+        <!--Email input -->
+        <div class="row">
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control form-width" id="exampleInputEmail1" placeholder="Enter Email">
+            </fieldset>
+          </div>
+          <!--end of username input -->
+          <!--Repeat email input-->
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputRepeatEmail1">Repeat Email</label>
+              <input type="email" class="form-control form-width" id="exampleInputRepeatEmail1" placeholder="Repeat Email">
+            </fieldset>
+          </div>
+          <!--end repeat email input-->
+          <!--Office Name input-->
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputOfficeName1">Office Name</label>
+              <input type="email" class="form-control form-width" id="exampleInputOffcieName1" placeholder="Enter Office Name">
+            </fieldset>
+          </div>
+          <!--end of Office Name input -->
+          <!--Phone Number input-->
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputPhoneNumber1">Phone Number</label>
+              <input type="email" class="form-control form-width" id="exampleInputPhoneNumber1" placeholder="Enter Phone Number">
+            </fieldset>
+          </div>
+          <!--end of phone number input-->
+        </div>
+        <div id="create-account-submit" class="row">
+          <div class="col-xs-12">
+            <a href="turn-app.html">
+              <button type="submit" class="btn btn-primary">Create Account</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--Contact Us -->
+
+      <div id="contact-us" class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-12">
+            <h1 id="contact-us-h1">Contact us</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3">
+            <fieldset class="form-group">
+              <label for="exampleInputName2">Name | Last Name</label>
+              <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Enter Name and Last Name">
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3">
+            <fieldset class="form-group">
+              <label for="exampleInputEmail2">Email</label>
+              <input type="email" class="form-control form-width" id="exampleInputEmail2" placeholder="Enter Email">
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3">
+            <fieldset class="form-group">
+              <label for="exampleInputPhone2">Phone</label>
+              <input type="email" class="form-control form-width" id="exampleInputPhone2" placeholder="Enter Phone Number">
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3">
+            <label for="exampleInputMessage2">Enter your message here.</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here." rows="7"></textarea>
+          </div>
+        </div>
+
+
+        <div id="send-message-div" class="row">
+          <div class="col-xs-12">
+            <a href="#">
+              <button id="send-message" type="button" class="btn btn-primary btn-block">Send Message</button>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+
+  </header>
+  <!--Footer -->
+  <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <h5 id="turn-email">info.turnapp@gmail.com</h5>
+        </div>
+        <div class="col-xs-6" style="padding-left: 50px">
+          <a href="https://www.facebook.com/pr.turn/?fref=ts"><img src="assets/images/facebook-3.svg" alt="Facebook Icon" width="30px" />
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
 </body>
+
 </html>

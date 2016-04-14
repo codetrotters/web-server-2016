@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turn App</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
+  <script src="assets/js/jquery.js" charset="utf-8"></script>
+  <script src="assets/js/bootstrap.js" charset="utf-8"></script>
+  <script src="assets/js/script.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <!--Navbar-->
+  <header>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img id="brand-image" alt="Brand" src="assets/images/lalalala turn.png" width="40px">
+            <p id="brand-paragraph">
+              Turn.App
+            </p>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="example">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="index.html">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h4 id="todayDate">Sunday, April 10, 2016</h4>
+              <button id="addRow">Add new row</button>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <table id="example" class="display" style="width:100%">
+                <tr>
+                  <th>Name | Last Name</th>
+                  <th>Phone Number</th>
+                  <th class="th-center">Reception</th>
+                  <th class="th-center">Service</th>
+                  <th class="th-center">Exit</th>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td class="th-center">
+                    <button id="reception-button" type="button" name="button">Reception</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="service-button" type="button" name="button">Service</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="exit-button" type="button" name="button">Exit</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td class="th-center">
+                    <button id="reception-button" type="button" name="button">Reception</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="service-button" type="button" name="button">Service</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="exit-button" type="button" name="button">Exit</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td class="th-center">
+                    <button id="reception-button" type="button" name="button">Reception</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="service-button" type="button" name="button">Service</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="exit-button" type="button" name="button">Exit</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td class="th-center">
+                    <button id="reception-button" type="button" name="button">Reception</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="service-button" type="button" name="button">Service</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="exit-button" type="button" name="button">Exit</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td class="th-center">
+                    <button id="reception-button" type="button" name="button">Reception</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="service-button" type="button" name="button">Service</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="exit-button" type="button" name="button">Exit</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td class="th-center">
+                    <button id="reception-button" type="button" name="button">Reception</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="service-button" type="button" name="button">Service</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="exit-button" type="button" name="button">Exit</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td class="th-center">
+                    <button id="reception-button" type="button" name="button">Reception</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="service-button" type="button" name="button">Service</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="exit-button" type="button" name="button">Exit</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td>
+                    <input type="text" id="row-1-age" name="row-1-age" value="">
+                  </td>
+                  <td class="th-center">
+                    <button id="reception-button" type="button" name="button">Reception</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="service-button" type="button" name="button">Service</button>
+                  </td>
+                  <td class="th-center">
+                    <button id="exit-button" type="button" name="button">Exit</button>
+                  </td>
+                </tr>
+
+
+
+              </table>
+            </div>
+
+          </div>
+        </div>
+
+
+      </section>
+
+    </main>
+  </header>
+
+
+</body>
+
+<!--Footer -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <h5 id="turn-email">info.turnapp@gmail.com</h5>
+      </div>
+      <div class="col-xs-6" style="padding-left: 50px">
+        <a href="https://www.facebook.com/pr.turn/?fref=ts"><img src="assets/images/facebook-3.svg" alt="Facebook Icon" width="30px" />
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</html>

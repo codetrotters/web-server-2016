@@ -7,11 +7,11 @@
   <title>Turn App</title>
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
-  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
   <script src="assets/js/jquery.js" charset="utf-8"></script>
   <script src="assets/js/bootstrap.js" charset="utf-8"></script>
   <script src="assets/js/script.js" charset="utf-8"></script>
+  <script src="assets/js/turnapp.js" charset="utf-8"></script>
+
 </head>
 
 <body>
@@ -45,15 +45,15 @@
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-xs-12">
-              <h4 id="todayDate">Sunday, April 10, 2016</h4>
-              <button id="addRow">Add new row</button>
+            <div  id="date" class="col-xs-12">
+              <h4>Sunday, April 10, 2016</h4>
+              <button onclick="myFunction()" id="addRow">Add new row</button>
             </div>
 
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <table id="example" class="display" style="width:100%">
+              <table id="myTable" class="display" style="width:100%">
                 <tr>
                   <th>Name | Last Name</th>
                   <th>Phone Number</th>

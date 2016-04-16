@@ -11,9 +11,9 @@ main {
   padding: 5px 15px;
 }
 
-#maincontainer-image-back {
-  margin-bottom: 0;
-  background-color: rgba(230, 230, 230, 0.61);
+
+#maincontainer-image-back {;
+  background-color: rgba(230, 230, 230, 0.61);;;
 }
 
 .parallax-window {
@@ -109,7 +109,14 @@ main {
 }
 .aboutus-p {
   font-family: lato;
+  height: auto;
+  transition: .4s;
 }
+
+.aboutus-p:hover {
+  transform: scale(1.1,1.1);
+}
+
 #how-doesit-work {
   padding: 20px 0;
 }
@@ -118,6 +125,15 @@ main {
   color: #f55115;
   font-family: organo;
   margin-bottom: 15px;
+}
+
+.icon-img {
+  height: auto;
+  transition: .4s;
+}
+
+.icon-img:hover {
+  transform: scale(1.2,1.2);
 }
 
 .howdoesitwork-h5 {

@@ -10,3 +10,8 @@
        //e.preventDefault();
    });
 });
+
+$('#about-us').ScrollTo({
+    duration: 2000,
+    easing: 'linear'
+});

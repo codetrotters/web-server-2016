@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/jquery.js" charset="utf-8"></script>
+  <script src="assets/js/parallax.min.js"></script>
   <script src="assets/js/bootstrap.js" charset="utf-8"></script>
   <script src="assets/js/script.js" charset="utf-8"></script>
 </head>
@@ -39,72 +40,74 @@
       </div>
     </div>
     <!--Get an account -->
-    <div id="create-an-account" class="container-fluid">
-      <div class="row">
-        <div id="getaccount-col12" class="col-xs-12">
-          <img src="assets/images/turn.app.square.JPG" alt="Turn.App Logo" width="100px" class="img-rounded img-responsive center-block" />
-          <h1 id="create-account-h1">Create an account</h1>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/photo-1422479278902-8cef24992df0.jpg">
+      <div id="create-an-account" class="container-fluid">
+        <div class="row">
+          <div id="getaccount-col12" class="col-xs-12">
+            <img src="assets/images/turn.app.square.JPG" alt="Turn.App Logo" width="100px" class="img-rounded img-responsive center-block" />
+            <h1 id="create-account-h1">Create an account</h1>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <!--Name input-->
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label for="exampleInputName1">Name | Last Name</label>
-            <input type="email" class="form-control form-width" id="exampleInputName1" placeholder="Enter Name and Last Name">
-          </fieldset>
+        <div class="row">
+          <!--Name input-->
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputName1">Name | Last Name</label>
+              <input type="email" class="form-control form-width" id="exampleInputName1" placeholder="Enter Name and Last Name">
+            </fieldset>
+          </div>
+          <!--end of name input -->
+          <!--username input -->
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputUsername1">Create Username</label>
+              <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Create Username">
+            </fieldset>
+          </div>
         </div>
-        <!--end of name input -->
-        <!--username input -->
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label for="exampleInputUsername1">Create Username</label>
-            <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Create Username">
-          </fieldset>
+        <!--end username input-->
+        <!--Email input -->
+        <div class="row">
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control form-width" id="exampleInputEmail1" placeholder="Enter Email">
+            </fieldset>
+          </div>
+          <!--end of username input -->
+          <!--Repeat email input-->
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputRepeatEmail1">Repeat Email</label>
+              <input type="email" class="form-control form-width" id="exampleInputRepeatEmail1" placeholder="Repeat Email">
+            </fieldset>
+          </div>
+          <!--end repeat email input-->
+          <!--Office Name input-->
         </div>
-      </div>
-      <!--end username input-->
-      <!--Email input -->
-      <div class="row">
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label for="exampleInputEmail1">Email</label>
-            <input type="email" class="form-control form-width" id="exampleInputEmail1" placeholder="Enter Email">
-          </fieldset>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputOfficeName1">Office Name</label>
+              <input type="email" class="form-control form-width" id="exampleInputOffcieName1" placeholder="Enter Office Name">
+            </fieldset>
+          </div>
+          <!--end of Office Name input -->
+          <!--Phone Number input-->
+          <div class="col-md-6 col-xs-12 input-background">
+            <fieldset class="form-group">
+              <label for="exampleInputPhoneNumber1">Phone Number</label>
+              <input type="email" class="form-control form-width" id="exampleInputPhoneNumber1" placeholder="Enter Phone Number">
+            </fieldset>
+          </div>
+          <!--end of phone number input-->
         </div>
-        <!--end of username input -->
-        <!--Repeat email input-->
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label for="exampleInputRepeatEmail1">Repeat Email</label>
-            <input type="email" class="form-control form-width" id="exampleInputRepeatEmail1" placeholder="Repeat Email">
-          </fieldset>
-        </div>
-        <!--end repeat email input-->
-        <!--Office Name input-->
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label for="exampleInputOfficeName1">Office Name</label>
-            <input type="email" class="form-control form-width" id="exampleInputOffcieName1" placeholder="Enter Office Name">
-          </fieldset>
-        </div>
-        <!--end of Office Name input -->
-        <!--Phone Number input-->
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label for="exampleInputPhoneNumber1">Phone Number</label>
-            <input type="email" class="form-control form-width" id="exampleInputPhoneNumber1" placeholder="Enter Phone Number">
-          </fieldset>
-        </div>
-        <!--end of phone number input-->
-      </div>
-      <div id="create-account-submit" class="row">
-        <div class="col-xs-12">
-          <a href="turn-app.html">
-            <button type="submit" class="btn btn-primary">Create Account</button>
-          </a>
+        <div id="create-account-submit" class="row">
+          <div class="col-xs-12">
+            <a href="turn-app.html">
+              <button type="submit" class="btn btn-primary">Create Account</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

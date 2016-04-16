@@ -278,6 +278,16 @@ tr:hover {
   margin-bottom: 20px;
 }
 
+#deleteRow {
+  width: 10%;
+  background-color: rgb(236, 118, 42);
+  border-radius: 30px;
+  font-family: lato;
+  border-style: inherit;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
 #reception-button {
   width: 50%;
   background-color: rgb(208, 208, 208);

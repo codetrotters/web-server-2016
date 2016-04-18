@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/jquery.js" charset="utf-8"></script>
+  <script src="assets/js/jquery-ui.min.js" charset="utf-8"></script>
   <script src="assets/js/bootstrap.js" charset="utf-8"></script>
   <script src="assets/js/script.js" charset="utf-8"></script>
   <script src="assets/js/turnapp.js" charset="utf-8"></script>
@@ -45,8 +46,11 @@
       <section>
         <div class="container">
           <div class="row">
-            <div  id="date" class="col-xs-12">
+            <div id="date" class="col-xs-12">
               <h4>Sunday, April 10, 2016</h4>
+              <p>
+                Pick a date: <input type="text" id="datepicker">
+              </p>
               <button onclick="myFunction()" id="addRow">Add new row</button>
               <button onclick="myDeleteFunction()" id="deleteRow">Delete row</button>
             </div>
@@ -63,21 +67,22 @@
                   <th class="th-center">Exit</th>
                 </tr>
                 <tr>
-                  <td>
-                    <input type="text" id="row-1-age" name="row-1-age" value="">
-                  </td>
-                  <td>
-                    <input type="text" id="row-1-age" name="row-1-age" value="">
-                  </td>
-                  <td class="th-center">
-                    <button id="reception-button" type="button" name="button">Reception</button>
-                  </td>
-                  <td class="th-center">
-                    <button id="service-button" type="button" name="button">Service</button>
-                  </td>
-                  <td class="th-center">
-                    <button id="exit-button" type="button" name="button">Exit</button>
-                  </td>
+                  <tbody id="sortable">
+                    <td>
+                      <input type="text" id="row-1-age" name="row-1-age" value="">
+                    </td>
+                    <td>
+                      <input type="text" id="row-1-age" name="row-1-age" value="">
+                    </td>
+                    <td class="th-center">
+                      <button id="reception-button" type="button" name="button">Reception</button>
+                    </td>
+                    <td class="th-center">
+                      <button id="service-button" type="button" name="button">Service</button>
+                    </td>
+                    <td class="th-center">
+                      <button id="exit-button" type="button" name="button">Exit</button>
+                    </td>
                 </tr>
 
                 <tr>
@@ -205,6 +210,7 @@
                     <button id="exit-button" type="button" name="button">Exit</button>
                   </td>
                 </tr>
+                </tbody>
 
 
 

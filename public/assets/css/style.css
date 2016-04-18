@@ -13,7 +13,7 @@ main {
 
 
 #maincontainer-image-back {;
-  background-color: rgba(230, 230, 230, 0.61);;;
+  background-color: rgba(230, 230, 230, 0.61);
 }
 
 .parallax-window {
@@ -46,10 +46,18 @@ main {
 
 .main-paragraph {
   font-family: lato;
-  padding: 0px 80px 20px 80px;
+  padding: 0px 80px 0px 80px;
   text-align: center;
   font-weight: 400;
   font-size: 18px;
+}
+
+#second-mainp {
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: lato;
+  font-weight: 300;
+
 }
 
 #brand-image {
@@ -68,7 +76,18 @@ main {
   width: 50%;
   margin: 0 auto;
   display: block;
+  border-color:black;
 }
+
+#get-button:hover {
+  background-color: rgba(0, 0, 0, 0.86);
+}
+
+#get-button:active {
+  position:relative;
+	top:1px;
+}
+
 #email-login {
   padding-bottom: 10px;
 }
@@ -82,11 +101,16 @@ main {
 }
 
 #about-us {
+  font-family: lato;
+  font-weight: 400;
+  font-size: 12px;
+  height: auto;
+  transition: .4s;
 }
 
 #create-an-account {
   background-size: 100%;
-  box-shadow: 0px 0px 5px 0px rgb(208, 208, 208);
+  box-shadow: 0px 0px 3px 0px rgb(208, 208, 208);
   /*margin-top: 50px;*/
 }
 
@@ -106,31 +130,48 @@ main {
   font-weight: 800;
   font-size: 50px;
   padding-bottom: 10px;
+  text-align: center;;
 }
 .aboutus-p {
   font-family: lato;
+  font-weight: 300;
+  font-size: 12px;
   height: auto;
   transition: .4s;
+  text-align: center;
+  padding-top: 4px;
 }
 
 .aboutus-p:hover {
   transform: scale(1.1,1.1);
 }
 
-#how-doesit-work {
-  padding: 20px 0;
+#aboutus-section{
+      padding-bottom: 20px;
 }
 
 #howdoesitwork-h3 {
   color: #f55115;
   font-family: organo;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .icon-img {
   height: auto;
-  transition: .4s;
+  transition: .2s;
 }
+
+.icon-img:hover {
+  transform: scale(1.2,1.2);
+}
+
+
+.icon-img {
+  height: auto;
+  transition: .2s;
+}
+
 
 .icon-img:hover {
   transform: scale(1.2,1.2);
@@ -146,6 +187,7 @@ main {
   font-family: lato;
   font-weight: 300;
 }
+
 .sign-in-btn {
   width: 40%;
   font-size: 14px;
@@ -155,7 +197,24 @@ main {
   font-weight: bold;
   font-family: lato;
   margin: 0 auto;
+
 }
+
+.sign-in-btn:hover {
+  background-color: rgba(238, 90, 43, 0.83);
+  border-color: rgba(238, 90, 43, 0.83);
+}
+
+.sign-in-btn:active {
+  position:relative;
+	top:1px;
+}
+
+.sign-in-btn:active {
+  position:relative;
+	top:1px;
+}
+
 #create-account-h1 {
   color: rgb(24, 167, 98);
   font-family: organo;
@@ -177,6 +236,10 @@ main {
 #create-account-submit > div > a {
   font-weight: bold;
   font-family: lato;
+}
+
+.aboutus-p:hover {
+  transform: scale(1.1,1.1);
 }
 
 .form-control {
@@ -225,6 +288,7 @@ main {
   margin-left: 33%;
   text-align: center;
 }
+
 #turn-email {
   text-align: right;
   font-size: 10px;
@@ -238,13 +302,37 @@ main {
   display: block;
   margin: 0 auto;
 }
+
+
+#create-account-submit > div > a > .btn-primary:hover {
+  background-color: rgba(238, 90, 43, 0.83);
+  border-color: rgba(238, 90, 43, 0.83);
+}
+
+#create-account-submit > div > a > .btn-primary:active {
+  position:relative;
+	top:1px;
+}
+
+
+
 #send-message {
   color: #fff;
   background-color: #f55115;
   border-color: #f55115;;
   margin: auto;
   width: 35%;
+}
 
+
+#send-message:hover {
+  background-color: rgba(238, 90, 43, 0.83);
+  border-color: rgba(238, 90, 43, 0.83);
+}
+
+#send-message:active {
+  position:relative;
+	top:1px;
 }
 
 .bs-docs-footer {
@@ -287,6 +375,7 @@ tr:hover {
 
 #addRow {
   width: 10%;
+  height: 10%;
   background-color: rgb(208, 208, 208);
   border-radius: 30px;
   font-family: lato;
@@ -294,8 +383,18 @@ tr:hover {
   margin-bottom: 20px;
 }
 
+#addRow:hover {
+  background-color: rgb(146, 150, 146)
+}
+
+#addRow:active {
+  position:relative;
+	top:1px;
+}
+
 #deleteRow {
   width: 10%;
+  height: 10%;
   background-color: rgb(236, 118, 42);
   border-radius: 30px;
   font-family: lato;
@@ -304,35 +403,69 @@ tr:hover {
   color: #ffffff;
 }
 
+#deleteRow:hover {
+  background-color: rgb(204, 95, 16);
+}
+
+#deleteRow:active {
+  position:relative;
+	top:1px;
+}
+
 #reception-button {
   width: 50%;
   background-color: rgb(208, 208, 208);
-  border-radius: 30px;
+  border-radius: 20px;
   font-family: lato;
-  border-style: inherit;
+  border-style: none;
   text-align: center;
+}
+
+#reception-button:hover {
+    background-color: rgb(146, 150, 146)
+}
+
+#reception-button:active {
+  position:relative;
+	top:1px;
 }
 
 #service-button {
 width: 50%;
 background-color: rgb(24, 167, 98);
 border-color: rgb(24, 167, 98);
-border-radius: 30px;
+border-radius: 20px;
 font-family: lato;
 color: #ffffff;
-border-style: inherit;
+border-style: none;
 text-align: center;
+}
+
+#service-button:hover {
+  background-color: rgb(5, 145, 86)
+}
+
+#service-button:active {
+  position:relative;
+	top:1px;
 }
 
 #exit-button {
 width: 60%;
 background-color: #f55115;
 border-color: #f55115;
-border-radius: 30px;
+border-radius: 20px;
 font-family: lato;
 color: #ffffff;
-border-style: inherit;
+border-style: none;
 text-align: center;
 }
 
-/*CSS for tables*/
+#exit-button:hover {
+  background-color: rgb(204, 95, 16);
+}
+
+#exit-button:active {
+  position:relative;
+	top:1px;
+}

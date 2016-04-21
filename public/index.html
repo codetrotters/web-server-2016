@@ -9,55 +9,52 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/jquery.js" charset="utf-8"></script>
-  <script src="assets/js/parallax.min.js"></script>
-  <script src="assets/js/jquery-scrollto/lib/jquery-scrollto.js"></script>
-  <script src="assets/js/jquery-scrollto/jquery.js"></script>
+  <script src="assets/js/parallax.min.js" charset="utf-8"></script>
+    <script src="assets/js/parallax.js" charset="utf-8"></script>
 
   <script src="assets/js/bootstrap.js" charset="utf-8"></script>
   <script src="assets/js/script.js" charset="utf-8"></script>
 
 
-  </script>
-
 </head>
+
+
+
+<!--Navbar-->
+<section>
+  <header>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img id="brand-image" alt="Brand" src="assets/images/lalalala turn.png" width="40px">
+            <p id="brand-paragraph">
+              Turn.App
+            </p>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="example">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="clickclass" id="clickme" style="padding-top: 20px;">About Us</a></li>
+            <li class="active"><a href="#" class="clickclass" id="clickme2" style="padding-top: 20px;">Log In</a></li>
+            <li><a href="#" class="clickclass" id="clickme3" style="padding-top: 20px;">Create Account</a></li>
+            <li><a href="#" class="clickclass" id="clickme4" style="padding-top: 20px;">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+</section>
 
 <body>
 
-  <!--Navbar-->
-  <section>
-    <header>
-      <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-              <img id="brand-image" alt="Brand" src="assets/images/lalalala turn.png" width="40px">
-              <p id="brand-paragraph">
-                Turn.App
-              </p>
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="example">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#about-us">About Us</a></li>
-              <li><a href="#log-in">Log In</a></li>
-              <li><a href="#create-an-account">Create Account</a></li>
-              <li><a href="#contact-us">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-  </section>
-
-
-
-  <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/photo-1432821596592-e2c18b78144f.jpg">
-    <div id="maincontainer-image-back" class="container-fluid">
+  <!-- <div class="parallax-window" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="assets/images/photo-1432821596592-e2c18b78144f.jpg" data-natural-width="1400" data-natural-height="900" style="height: 100%;"> -->
+    <div id="maincontainer-image-bg" class="container-fluid">
       <div class="row main-container-row">
         <div class="col-md-6 col-xs-12">
           <h1 class="h1-turnapp">Turn.App</h1>
@@ -109,65 +106,66 @@
 
       </div>
     </div>
-  </div>
+  <!-- </div> -->
+
 
 
   <!--About us-->
-  <section id="aboutus-section">
-    <div id="about-us" class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 id="aboutus-h1">About us</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-xs-12">
-          <img class="img-responsive center-block icon-img" src="assets/images/UI_PerkIcon_Medic_black.png" alt="example icon" width="50px" />
-          <p class="aboutus-p">
-            Through Turn., health care providers will find a simple yet effective solution to over-crowded waiting areas, uneasy staff workers, all while permitting a personalized approach to tending patients, before they enter the actual doctor’s office.
-          </p>
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <img class="img-responsive center-block icon-img" src="assets/images/chart.png" alt="example icon" width="40px" />
-          <p class="aboutus-p">
-            Our studies have show that 90% of people find waiting at medical offices troublesome, as well as a influential factor in the decision of scheduling an appointment. That same percentage of people stated that they would be more inclined to frequent their medical service providers, if a solution to the waiting inconvenience existed.
-          </p>
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <img class="img-responsive center-block icon-img" src="assets/images/clock.png" alt="example icon" width="50px" />
-          <p class="aboutus-p">
-          Turn. allows its users to monitor their assigned turn at a health service provider, all on real time. Patients will be able to use their accustomed waiting time however they please. Thus eliminating the adverse limitations that come with seeking medical attention.
-          </p>
-        </div>
+  <div id="about-us" class="container">
+    <div id="wrap2" class="row">
+      <div class="col-xs-12">
+        <h1 id="aboutus-h1">About us</h1>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <img class="img-responsive center-block icon-img" src="assets/images/UI_PerkIcon_Medic_black.png" alt="example icon" width="50px" />
+        <p class="aboutus-p">
+          Through Turn., health care providers will find a simple yet effective solution to over-crowded waiting areas, uneasy staff workers, all while permitting a personalized approach to tending patients, before they enter the actual doctor’s office.
+        </p>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <img class="img-responsive center-block icon-img" src="assets/images/chart.png" alt="example icon" width="40px" />
+        <p class="aboutus-p">
+          Our studies have show that 90% of people find waiting at medical offices troublesome, as well as a influential factor in the decision of scheduling an appointment. That same percentage of people stated that they would be more inclined to frequent their
+          medical service providers, if a solution to the waiting inconvenience existed.
+        </p>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <img class="img-responsive center-block icon-img" src="assets/images/clock.png" alt="example icon" width="50px" />
+        <p class="aboutus-p">
+          Turn. allows its users to monitor their assigned turn at a health service provider, all on real time. Patients will be able to use their accustomed waiting time however they please. Thus eliminating the adverse limitations that come with seeking medical
+          attention.
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <!--How does it work? -->
-    <div class="container">
-      <div id="how-doesit-work" class="row">
-                <h3 id="howdoesitwork-h3">How does it work</h3>
-        <div class="col-md-6 col-xs-12 ">
-          <img src="assets/images/mockup.turn.png" alt="Mock Up Turn.App" width="400px" class=" img-responsive center-block" />
-        </div>
-        <div class="col-md-3 col-xs-12" style="padding-top: 6%">
-          <h5 class="howdoesitwork-h5">Create an Account.</h5>
-          <p class="howdoesitwork-p">
-            Creating an account with us is easy!
-            <br> Go to "Get Turn.App Now" and press the button, this will take you a register page.
-          </p>
-        </div>
-        <div class="col-md-3 col-xs-12" style="padding-top: 5%; padding-left: 20px;">
-          <h5 class="howdoesitwork-h5">Manage turns from the web.</h5>
-          <p class="howdoesitwork-p">
-            Once you have created your account, you will be able to access the system of turns management. With this system you will be able to notify your patients when their turn is approximating.
-          </p>
-        </div>
+  <!--How does it work? -->
+  <div class="container">
+    <div id="how-doesit-work" class="row">
+      <h3 id="howdoesitwork-h3">How does it work</h3>
+      <div class="col-md-6 col-xs-12 ">
+        <img src="assets/images/mockup.turn.png" alt="Mock Up Turn.App" width="400px" class=" img-responsive center-block" />
+      </div>
+      <div class="col-md-3 col-xs-12" style="padding-top: 6%">
+        <h5 class="howdoesitwork-h5">Create an Account.</h5>
+        <p class="howdoesitwork-p">
+          Creating an account with us is easy!
+          <br> Go to "Get Turn.App Now" and press the button, this will take you a register page.
+        </p>
+      </div>
+      <div class="col-md-3 col-xs-12" style="padding-top: 5%; padding-left: 20px;">
+        <h5 class="howdoesitwork-h5">Manage turns from the web.</h5>
+        <p class="howdoesitwork-p">
+          Once you have created your account, you will be able to access the system of turns management. With this system you will be able to notify your patients when their turn is approximating.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
 
   <!--Get an account -->
-  <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/photo-1422479278902-8cef24992df0.jpg">
+
     <div id="create-an-account" class="container-fluid">
       <div class="row">
         <div id="getaccount-col12" class="col-xs-12">
@@ -179,15 +177,15 @@
         <!--Name input-->
         <div class="col-md-6 col-xs-12 input-background">
           <fieldset class="form-group">
-            <label for="exampleInputName1">Name | Last Name</label>
-            <input type="email" class="form-control form-width" id="exampleInputName1" placeholder="Enter Name and Last Name">
+            <label class="get-font" for="exampleInputName1">Full Name</label>
+            <input type="email" class="form-control form-width" id="exampleInputName1" placeholder="Enter Full Name">
           </fieldset>
         </div>
         <!--end of name input -->
         <!--username input -->
         <div class="col-md-6 col-xs-12 input-background">
           <fieldset class="form-group">
-            <label for="exampleInputUsername1">Create Username</label>
+            <label class="get-font" for="exampleInputUsername1">Create Username</label>
             <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Create Username">
           </fieldset>
         </div>
@@ -197,7 +195,7 @@
       <div class="row">
         <div class="col-md-6 col-xs-12 input-background">
           <fieldset class="form-group">
-            <label for="exampleInputEmail1">Email</label>
+            <label class="get-font" for="exampleInputEmail1">Email</label>
             <input type="email" class="form-control form-width" id="exampleInputEmail1" placeholder="Enter Email">
           </fieldset>
         </div>
@@ -205,7 +203,7 @@
         <!--Repeat email input-->
         <div class="col-md-6 col-xs-12 input-background">
           <fieldset class="form-group">
-            <label for="exampleInputRepeatEmail1">Repeat Email</label>
+            <label class="get-font" for="exampleInputRepeatEmail1">Repeat Email</label>
             <input type="email" class="form-control form-width" id="exampleInputRepeatEmail1" placeholder="Repeat Email">
           </fieldset>
         </div>
@@ -215,7 +213,7 @@
       <div class="row">
         <div class="col-md-6 col-xs-12 input-background">
           <fieldset class="form-group">
-            <label for="exampleInputOfficeName1">Office Name</label>
+            <label class="get-font" for="exampleInputOfficeName1">Office Name</label>
             <input type="email" class="form-control form-width" id="exampleInputOffcieName1" placeholder="Enter Office Name">
           </fieldset>
         </div>
@@ -223,7 +221,7 @@
         <!--Phone Number input-->
         <div class="col-md-6 col-xs-12 input-background">
           <fieldset class="form-group">
-            <label for="exampleInputPhoneNumber1">Phone Number</label>
+            <label class="get-font" for="exampleInputPhoneNumber1">Phone Number</label>
             <input type="email" class="form-control form-width" id="exampleInputPhoneNumber1" placeholder="Enter Phone Number">
           </fieldset>
         </div>
@@ -237,7 +235,8 @@
         </div>
       </div>
     </div>
-  </div>
+
+
 
   <!--Contact Us -->
 
@@ -253,8 +252,8 @@
       <div class="row">
         <div class="col-md-6 col-xs-12 col-md-offset-3">
           <fieldset class="form-group">
-            <label for="exampleInputName2">Name | Last Name</label>
-            <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Enter Name and Last Name">
+            <label class="get-font" for="exampleInputName2">Full Name</label>
+            <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Enter Full Name">
           </fieldset>
         </div>
       </div>
@@ -262,7 +261,7 @@
       <div class="row">
         <div class="col-md-6 col-xs-12 col-md-offset-3">
           <fieldset class="form-group">
-            <label for="exampleInputEmail2">Email</label>
+            <label class="get-font" for="exampleInputEmail2">Email</label>
             <input type="email" class="form-control form-width" id="exampleInputEmail2" placeholder="Enter Email">
           </fieldset>
         </div>
@@ -271,7 +270,7 @@
       <div class="row">
         <div class="col-md-6 col-xs-12 col-md-offset-3">
           <fieldset class="form-group">
-            <label for="exampleInputPhone2">Phone</label>
+            <label class="get-font" for="exampleInputPhone2">Phone</label>
             <input type="email" class="form-control form-width" id="exampleInputPhone2" placeholder="Enter Phone Number">
           </fieldset>
         </div>
@@ -279,7 +278,7 @@
 
       <div class="row">
         <div class="col-md-6 col-xs-12 col-md-offset-3">
-          <label for="exampleInputMessage2">Enter your message here.</label>
+          <label class="get-font" for="exampleInputMessage2">Enter your message here.</label>
           <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here." rows="7"></textarea>
         </div>
       </div>
@@ -295,22 +294,23 @@
       </div>
     </div>
   </section>
-  <!--Footer -->
-  <footer class="bs-docs-footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
-          <h5 id="turn-email">info.turnapp@gmail.com</h5>
-        </div>
-        <div class="col-xs-6" style="padding-left: 50px">
-          <a href="https://www.facebook.com/pr.turn/?fref=ts"><img src="assets/images/facebook-3.svg" alt="Facebook Icon" width="30px" />
-          </a>
-
-        </div>
-      </div>
-
-    </div>
-  </footer>
 </body>
+<!--Footer -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <h5 id="turn-email">info.turnapp@gmail.com</h5>
+      </div>
+      <div class="col-xs-6" style="padding-left: 50px">
+        <a href="https://www.facebook.com/pr.turn/?fref=ts"><img src="assets/images/facebook-3.svg" alt="Facebook Icon" width="30px" />
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
 
 </html>

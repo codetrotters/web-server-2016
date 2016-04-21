@@ -1,8 +1,7 @@
 @font-face {
   font-family: organo;
-  src: url(/Users/gabrielarivera/Desktop/Codetrotters/web-server-2016/public/assets/fonts/Organo0.ttf);
+  src: url(../fonts/Organo0.ttf);
 }
-
 main {
   padding-top: 70px;
   padding-bottom: 30px;
@@ -11,30 +10,33 @@ main {
   padding: 5px 15px;
 }
 
-
-#maincontainer-image-back {;
-  background-color: rgba(230, 230, 230, 0.61);
+.clickclass {
+  font-family: organo;
+  font-weight: 400;
 }
 
-.parallax-window {
+/*.parallax-window {
     min-height: 400px;
     background: transparent;
-    box-shadow: 0px 0px 30px 0px rgba(152, 152, 152, 0.94);
-}
+}*/
 
-.main-container-row {;
-  padding-bottom: 40px;
-  padding-top: 100px;
-  /*box-shadow: 0px 0px 60px 0px rgb(208, 208, 208);*/
+.main-container-row {
+  background-color: rgba(255, 255, 255, 0.62);
+  padding-bottom: 130px;
+  padding-top: 130px;
+  ;
 }
-
+#maincontainer-image-bg {
+  background-image: url('../images/photo-1432821596592-e2c18b78144f.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+}
 .h1-login-turnapp {
   font-family: organo;
   color: rgb(24, 167, 98);
   text-align: center;
   margin-top: 60px;
 }
-
 .h1-turnapp {
   font-family: organo;
   font-weight: 400;
@@ -43,7 +45,6 @@ main {
   font-size: 100px;
   margin-top: 40px;
 }
-
 .main-paragraph {
   font-family: lato;
   padding: 0px 80px 0px 80px;
@@ -51,24 +52,19 @@ main {
   font-weight: 400;
   font-size: 18px;
 }
-
 #second-mainp {
   padding-bottom: 20px;
   text-align: center;
   font-family: lato;
   font-weight: 300;
-
 }
-
 #brand-image {
   display: inline-block;
 }
-
 #brand-paragraph {
   display: inline-block;
   font-family: organo;
 }
-
 #get-button {
   background-color: black;
   font-family: lato;
@@ -76,44 +72,41 @@ main {
   width: 50%;
   margin: 0 auto;
   display: block;
-  border-color:black;
+  border-color: black;
 }
-
 #get-button:hover {
   background-color: rgba(0, 0, 0, 0.86);
 }
-
 #get-button:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
 #email-login {
   padding-bottom: 10px;
 }
 #sign-in-button {
   padding-top: 10px;
 }
-#check-box {;
+#check-box {
+  ;
   text-align: center;
   font-weight: 700;
   font-family: lato;
 }
-
 #about-us {
   font-family: lato;
   font-weight: 400;
   font-size: 12px;
-  height: auto;
   transition: .4s;
+  padding-top: 30px;
+  height: auto;
 }
-
 #create-an-account {
+  background-image: url('../images/photo-1422479278902-8cef24992df0.jpg');
   background-size: 100%;
-  box-shadow: 0px 0px 3px 0px rgb(208, 208, 208);
+  background-attachment: fixed;
   /*margin-top: 50px;*/
 }
-
 #need-help {
   text-align: center;
   font-weight: 700;
@@ -130,7 +123,7 @@ main {
   font-weight: 800;
   font-size: 50px;
   padding-bottom: 10px;
-  text-align: center;;
+  text-align: center;
 }
 .aboutus-p {
   font-family: lato;
@@ -141,42 +134,32 @@ main {
   text-align: center;
   padding-top: 4px;
 }
-
 .aboutus-p:hover {
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
 }
-
-#aboutus-section{
-      padding-bottom: 20px;
+#how-doesit-work {
+  padding-bottom: 30px;
 }
-
 #howdoesitwork-h3 {
   color: #f55115;
   font-family: organo;
   margin-bottom: 10px;
   text-align: center;
 }
-
 .icon-img {
   height: auto;
   transition: .2s;
 }
-
 .icon-img:hover {
-  transform: scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
 }
-
-
 .icon-img {
   height: auto;
   transition: .2s;
 }
-
-
 .icon-img:hover {
-  transform: scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
 }
-
 .howdoesitwork-h5 {
   font-family: lato;
   font-weight: bold;
@@ -187,7 +170,6 @@ main {
   font-family: lato;
   font-weight: 300;
 }
-
 .sign-in-btn {
   width: 40%;
   font-size: 14px;
@@ -197,24 +179,19 @@ main {
   font-weight: bold;
   font-family: lato;
   margin: 0 auto;
-
 }
-
 .sign-in-btn:hover {
   background-color: rgba(238, 90, 43, 0.83);
   border-color: rgba(238, 90, 43, 0.83);
 }
-
 .sign-in-btn:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
 .sign-in-btn:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
 #create-account-h1 {
   color: rgb(24, 167, 98);
   font-family: organo;
@@ -228,20 +205,22 @@ main {
   background-color: rgba(230, 230, 230, 0.61);
   background-size: 100%;
 }
-
 #create-account-submit > div {
   background-color: rgba(230, 230, 230, 0.61);
   padding-bottom: 50px;
 }
+
+.get-font {
+  font-family: lato;
+}
+
 #create-account-submit > div > a {
   font-weight: bold;
   font-family: lato;
 }
-
 .aboutus-p:hover {
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
 }
-
 .form-control {
   width: 100%;
   height: 34px;
@@ -259,36 +238,29 @@ main {
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-
 .form-group {
   text-align: center;
 }
-
 .form-width {
   width: 50%;
   margin: 0 auto;
 }
-
 .input-background {
   background-color: rgba(230, 230, 230, 0.61);
 }
-
 #contact-us {
   letter-spacing: 1.5px;
   text-align: center;
   padding: 30px 0px 20px 0px;
 }
-
 #contact-us-h1 {
   font-family: organo;
   color: rgb(24, 167, 98);
 }
-
 .contactus-margin {
   margin-left: 33%;
   text-align: center;
 }
-
 #turn-email {
   text-align: right;
   font-size: 10px;
@@ -302,48 +274,36 @@ main {
   display: block;
   margin: 0 auto;
 }
-
-
 #create-account-submit > div > a > .btn-primary:hover {
   background-color: rgba(238, 90, 43, 0.83);
   border-color: rgba(238, 90, 43, 0.83);
 }
-
 #create-account-submit > div > a > .btn-primary:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
-
-
 #send-message {
   color: #fff;
   background-color: #f55115;
-  border-color: #f55115;;
+  border-color: #f55115;
+  ;
   margin: auto;
   width: 35%;
 }
-
-
 #send-message:hover {
   background-color: rgba(238, 90, 43, 0.83);
   border-color: rgba(238, 90, 43, 0.83);
 }
-
 #send-message:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
 .bs-docs-footer {
   box-shadow: 0px 0px 5px 0px rgb(208, 208, 208);
 }
-
 #send-message-div {
   padding: 20px;
 }
-
-
 
 /*CSS turn-app */
 
@@ -352,120 +312,150 @@ table, th, td {
 }
 th, td {
   padding: 5px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  ;
+  ;
 }
-
 .th-center {
   text-align: center;
 }
-
-tr{
+tr {
   text-align: center;
 }
-
 tr:hover {
   background-color: #f5f5f5;
 }
-
 #date {
   margin-bottom: 20px;
   font-family: lato;
   font-weight: 400;
 }
-
 #addRow {
-  width: 10%;
+  width: 17%;
   height: 10%;
-  background-color: rgb(208, 208, 208);
-  border-radius: 30px;
+  background-color: rgba(208, 208, 208, 0.69);
+  border-radius: 5px;
   font-family: lato;
   border-style: inherit;
   margin-bottom: 20px;
 }
-
 #addRow:hover {
   background-color: rgb(146, 150, 146)
 }
-
 #addRow:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
 #deleteRow {
-  width: 10%;
+  width: 15%;
   height: 10%;
   background-color: rgb(236, 118, 42);
-  border-radius: 30px;
+  border-radius: 5px;
   font-family: lato;
   border-style: inherit;
   margin-bottom: 20px;
   color: #ffffff;
 }
-
 #deleteRow:hover {
   background-color: rgb(204, 95, 16);
 }
-
 #deleteRow:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
 #reception-button {
-  width: 50%;
-  background-color: rgb(208, 208, 208);
-  border-radius: 20px;
+  width: 60%;
+  background-color: rgba(208, 208, 208, 0.61);
+  border-radius: 5px;
   font-family: lato;
   border-style: none;
   text-align: center;
 }
-
 #reception-button:hover {
-    background-color: rgb(146, 150, 146)
+  background-color: rgb(146, 150, 146)
 }
-
 #reception-button:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
+}
+#header-text {
+  font-family: inherit;
+  font-weight: 200;
 }
 
+
+.select-hour {
+  font-family: lato;
+  font-weight: 400;
+}
+
+input {
+  font-family: lato;;
+  font-size: inherit;
+  line-height: inherit;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid rgba(224, 224, 224, 0.7);
+}
 #service-button {
-width: 50%;
-background-color: rgb(24, 167, 98);
-border-color: rgb(24, 167, 98);
-border-radius: 20px;
-font-family: lato;
-color: #ffffff;
-border-style: none;
-text-align: center;
+  width: 60%;
+  background-color: rgb(24, 167, 98);
+  border-color: rgb(24, 167, 98);
+  border-radius: 5px;
+  font-family: lato;
+  color: #ffffff;
+  border-style: none;
+  text-align: center;
 }
-
 #service-button:hover {
   background-color: rgb(5, 145, 86)
 }
-
 #service-button:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
 #exit-button {
-width: 60%;
-background-color: #f55115;
-border-color: #f55115;
-border-radius: 20px;
-font-family: lato;
-color: #ffffff;
-border-style: none;
-text-align: center;
+  width: 60%;
+  background-color: #f55115;
+  border-color: #f55115;
+  border-radius: 5px;
+  font-family: lato;
+  color: #ffffff;
+  border-style: none;
+  text-align: center;
 }
-
 #exit-button:hover {
   background-color: rgb(204, 95, 16);
 }
-
 #exit-button:active {
-  position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
+}
+#ui-datepicker-div {
+  position: absolute;
+  top: 135px;
+  left: 119.719px;
+  z-index: 1;
+  background: white;
+  display: block;
+  box-shadow: 0px 2px 11px;
+}
+
+#reception-button.active {
+  background-image: none;
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+}
+
+#service-button.active {
+  background-image: none;
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+}
+
+#exit-button.active {
+  background-image: none;
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
 }

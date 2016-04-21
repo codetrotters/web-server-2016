@@ -1,17 +1,52 @@
- $(document).ready(function () {
-   $('.nav li').click(function(e) {
+ $(document).ready(function() {
+  //  $('.nav li').click(function(e) {
+   //
+  //    $('.active').removeClass('active');
+  //    $(this).parent().addClass('active');
+  //  });
 
-       $('.active').removeClass('active');
+   $('#clickme').on('click', function() {
+     $('html, body').animate({
+       scrollTop: ($('#about-us').offset().top - 100)
+     }, 1000);
+     $('.active').removeClass('active');
+     $(this).parent().addClass('active');
 
-       var $this = $(this);
-       if (!$this.hasClass('active')) {
-           $this.addClass('active');
-       }
-       //e.preventDefault();
+     return false;
    });
-});
 
-$('#about-us').ScrollTo({
-    duration: 2000,
-    easing: 'linear'
-});
+
+   $('#clickme2').on('click', function() {
+     $('html, body').animate({
+       scrollTop: ($('#log-in').offset().top - 100)
+     }, 1000);
+     $('.active').removeClass('active');
+     $(this).parent().addClass('active');
+
+     return false;
+   });
+
+
+   $('#clickme3').on('click', function() {
+     $('html, body').animate({
+       scrollTop: ($('#create-an-account').offset().top - 100)
+     }, 1000);
+     $('.active').removeClass('active');
+     $(this).parent().addClass('active');
+
+     return false;
+   });
+
+   $('#clickme4').on('click', function() {
+     $('html, body').animate({
+       scrollTop: ($('#contact-us').offset().top - 100)
+     }, 1000);
+     $('.active').removeClass('active');
+     $(this).parent().addClass('active');
+
+     return false;
+   });
+
+
+
+ });

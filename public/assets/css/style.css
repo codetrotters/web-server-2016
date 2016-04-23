@@ -9,7 +9,6 @@ main {
 .navbar-brand {
   padding: 5px 15px;
 }
-
 .clickclass {
   font-family: organo;
   font-weight: 400;
@@ -29,7 +28,8 @@ main {
 #maincontainer-image-bg {
   background-image: url('../images/photo-1432821596592-e2c18b78144f.jpg');
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .h1-login-turnapp {
   font-family: organo;
@@ -43,7 +43,7 @@ main {
   color: #ffffff;
   text-align: center;
   font-size: 100px;
-  margin-top: 40px;
+  margin-top: 40px;;
 }
 .main-paragraph {
   font-family: lato;
@@ -88,7 +88,6 @@ main {
   padding-top: 10px;
 }
 #check-box {
-  ;
   text-align: center;
   font-weight: 700;
   font-family: lato;
@@ -103,8 +102,9 @@ main {
 }
 #create-an-account {
   background-image: url('../images/photo-1422479278902-8cef24992df0.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   /*margin-top: 50px;*/
 }
 #need-help {
@@ -124,6 +124,7 @@ main {
   font-size: 50px;
   padding-bottom: 10px;
   text-align: center;
+  margin-bottom: 28px;
 }
 .aboutus-p {
   font-family: lato;
@@ -138,13 +139,14 @@ main {
   transform: scale(1.1, 1.1);
 }
 #how-doesit-work {
-  padding-bottom: 30px;
+  padding-bottom: 55px;
 }
 #howdoesitwork-h3 {
   color: #f55115;
   font-family: organo;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
+  margin-top: 50px;
 }
 .icon-img {
   height: auto;
@@ -156,19 +158,61 @@ main {
 .icon-img {
   height: auto;
   transition: .2s;
+  margin-bottom: 10px;
+}
+.icon-img2{
+  height: auto;
+  transition: .2s;
+  margin-bottom: 10px;
 }
 .icon-img:hover {
   transform: scale(1.2, 1.2);
+}
+.icon-img2:hover {
+  transform: scale(1.1, 1.1);
 }
 .howdoesitwork-h5 {
   font-family: lato;
   font-weight: bold;
   color: rgb(24, 167, 98);
   font-size: 16px;
+  text-align: center;
+  margin-top: 0px;
+}
+.howdoesitwork-h5{
+  height: auto;
+  transition: .2s;
+  margin-bottom: 10px;
+}
+.howdoesitwork-h5:hover {
+  transform: scale(1.2, 1.2);
+}
+#howdoesitwork-div1 {
+  padding-top: 50px;
+  padding-left: 0px;;
+  margin: 0 auto;
+  padding: 30px 30px;;
+}
+#image-howdoesitwork {
+  padding-bottom: 10px;
+}
+
+#howdoesitwork-div2{
+  padding-top: 30px;
+  padding-left: 0px;
+  margin: 0 auto;
+  padding: 10px 30px;;
 }
 .howdoesitwork-p {
   font-family: lato;
   font-weight: 300;
+  text-align: center;
+  height: auto;
+  transition: .3s;
+  margin: 0 auto;
+}
+.howdoesitwork-p:hover {
+  transform: scale(1.2, 1.2);
 }
 .sign-in-btn {
   width: 40%;
@@ -201,7 +245,7 @@ main {
   text-align: center;
 }
 #getaccount-col12 {
-  padding-top: 50px;
+  padding-top: 100px;
   background-color: rgba(230, 230, 230, 0.61);
   background-size: 100%;
 }
@@ -209,11 +253,9 @@ main {
   background-color: rgba(230, 230, 230, 0.61);
   padding-bottom: 50px;
 }
-
 .get-font {
   font-family: lato;
 }
-
 #create-account-submit > div > a {
   font-weight: bold;
   font-family: lato;
@@ -242,8 +284,18 @@ main {
   text-align: center;
 }
 .form-width {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
+}
+.getaccount-fieldset {
+  display: inline-block;
+  width: 380px;
+  float: right;
+}
+.getaccount-fieldset2 {
+  display: inline-block;
+  width: 380px;
+  float: left;
 }
 .input-background {
   background-color: rgba(230, 230, 230, 0.61);
@@ -382,15 +434,13 @@ tr:hover {
   font-family: inherit;
   font-weight: 200;
 }
-
-
 .select-hour {
   font-family: lato;
   font-weight: 400;
 }
-
 input {
-  font-family: lato;;
+  font-family: lato;
+  ;
   font-size: inherit;
   line-height: inherit;
   border-top: none;
@@ -441,21 +491,24 @@ input {
   display: block;
   box-shadow: 0px 2px 11px;
 }
-
 #reception-button.active {
   background-image: none;
   background-color: rgb(255, 0, 0);
   color: #ffffff;
 }
-
 #service-button.active {
   background-image: none;
   background-color: rgb(255, 0, 0);
   color: #ffffff;
 }
-
 #exit-button.active {
   background-image: none;
   background-color: rgb(255, 0, 0);
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .h1-turnapp {
+    font-size: 70px;
+  }
 }

@@ -2,24 +2,31 @@ $(document).ready(function() {
 
   var date = getFullDate();
 
+  index = 0;
+
+  data = [];
+
   $('#date h4').text(date);
   console.log(date);
 
-  $( "#reception-button" ).click(function() {
-   $( this ).toggleClass( "active" );
-   console.log('click');
- });
+  $('#addRow').on('click', function() {
+    index = index + 1;
+    addRow(index);
+    main();
+  });
 
- $( "#service-button" ).click(function() {
-  $( this ).toggleClass( "active" );
-  console.log('click');
-});
+  $('#sortable').on('click', '.delete-button', function() {
+    var id = $(this).data("id");
+    deleteRow(id);
+    main();
+  });
 
-$( "#exit-button" ).click(function() {
- $( this ).toggleClass( "active" );
- console.log('click');
-});
+  $('#sortable').on('click', '.reception-button', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+  });
 
+  main();
 });
 
 getFullDate = function() {
@@ -29,25 +36,44 @@ getFullDate = function() {
   return days[today.getDay()] + ', ' + months[today.getMonth()] + " " + today.getDate() + ", " + today.getUTCFullYear();
 }
 
-function myFunction() {
-    var table = document.getElementById("myTable");
-    var row = table.insertRow(1);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
-    var cell5 = row.insertCell(4);
-    var cell6 = row.insertCell(5);
-    cell1.innerHTML = "<input type='text' id='row-1-age' name='row-1-age' value=''>";
-    cell2.innerHTML = "<input type='text' id='row-1-age' name='row-1-age' value=''>";
-    cell3.innerHTML = "<input type='text' id='row-1-age' name='row-1-age' value=''>";
-    cell4.innerHTML = "<button id='reception-button' type='button' name='button'>Reception</button>";
-    cell5.innerHTML = "<button id='service-button' type='button' name='button'>Service</button>";
-    cell6.innerHTML = "<button id='exit-button' type='button' name='button'>Exit</button>";
+
+function addRow(index) {
+  var dataObject = {
+    id: index,
+    name: '',
+    phoneNumber: '',
+    recordNumber: '',
+    reception: false,
+    service: false,
+    exit: false
+  };
+  data.push(dataObject);
 }
-function myDeleteFunction() {
-    document.getElementById("myTable").deleteRow(1);
-};
+
+function rowHtml(dataObject) {
+  // tr
+  // td
+  var html = "<tr><td><input type='text' id='row-" + dataObject.id + "-age' name='age' value=''></td><td><input type='text' id='row-" + dataObject.id + "-age' name='age' value=''></td><td><input type='text' id='row-" + dataObject.id + "-age' name='age' value=''></td><td class='th-center'><button id='reception" + dataObject.id + "button' class='' type='button' name='button'>Reception</button></td><td class='th-center'><button id='service" + dataObject.id + "button' type='button' name='button'>Service</button></td><td class='th-center'><button id='exit" + dataObject.id + "button' type='button' name='button'>Exit</button><td><button id='exit" + dataObject.id + "button' data-id=" + dataObject.id + " class='delete-button' type='button' name='button'>Delete</button></td></tr>";
+  return html;
+}
+
+function deleteRow(id) {
+  var self = id;
+  var index = data.findIndex(function(item) {
+    return item.id === id;
+  });
+  data.splice(index, 1);
+}
+
+function main() {
+  tableRowList = [];
+  $('#sortable').html('');
+  for (var i = 0; i < data.length; i++) {
+    tableRowList.push(rowHtml(data[i]));
+  }
+  tableRowsHtml = tableRowList.join('');
+  $('#sortable').html(tableRowsHtml);
+}
 
 $(function() {
     $( "#sortable" ).sortable();
@@ -57,3 +83,7 @@ $(function() {
   $(function() {
      $( "#datepicker" ).datepicker();
    });
+
+  $('button').on('click', function(){
+    $(this).closest('id');
+  });

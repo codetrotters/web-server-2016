@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/jquery.js" charset="utf-8"></script>
-  <script src="assets/js/parallax.min.js" charset="utf-8"></script>
-    <script src="assets/js/parallax.js" charset="utf-8"></script>
-
   <script src="assets/js/bootstrap.js" charset="utf-8"></script>
   <script src="assets/js/script.js" charset="utf-8"></script>
 
@@ -26,7 +23,7 @@
     <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+          <button id="dropdown-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -54,58 +51,58 @@
 <body>
 
   <!-- <div class="parallax-window" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="assets/images/photo-1432821596592-e2c18b78144f.jpg" data-natural-width="1400" data-natural-height="900" style="height: 100%;"> -->
-    <div id="maincontainer-image-bg" class="container-fluid">
-      <div class="row main-container-row">
-        <div class="col-md-6 col-xs-12">
-          <h1 class="h1-turnapp">Turn.App</h1>
-          <p class="main-paragraph">
-            Turn.App is a customer service optimization system that allows its users to monitor their turn on real time.
-          </p>
-          <p id="second-mainp">
-            This technology-based, customer service optimization platform aids health care professionals in managing patient attendance, providing individualized assistance, and promoting overall satisfaction and well-being.
-          </p>
-          <a id="get-button" class="btn btn-primary btn-block" href="get-turnapp.html">
+  <div id="maincontainer-image-bg" class="container-fluid">
+    <div class="row main-container-row">
+      <div class="col-md-6 col-xs-12">
+        <h1 class="h1-turnapp">Turn.App</h1>
+        <p class="main-paragraph">
+          Turn.App is a customer service optimization system that allows its users to monitor their turn on real time.
+        </p>
+        <p id="second-mainp">
+          This technology-based, customer service optimization platform aids health care professionals in managing patient attendance, providing individualized assistance, and promoting overall satisfaction and well-being.
+        </p>
+        <a id="get-button" class="btn btn-primary btn-block" href="get-turnapp.html">
                 Get Turn.App Now
               </a>
-        </div>
+      </div>
 
-        <!--LogIn -->
+      <!--LogIn -->
 
-        <div id="log-in" class="col-md-6 col-xs-12">
-          <h1 class="h1-login-turnapp">Log In</h1>
+      <div id="log-in" class="col-md-6 col-xs-12">
+        <h1 class="h1-login-turnapp">Log In</h1>
 
-          <div class="account-wall">
-            <form class="form-signin">
-              <div id="email-login" class="col-md-6 col-md-offset-3">
-                <input type="text" class="form-control" placeholder="Email" required autofocus>
-              </div>
-              <div class="col-md-6 col-md-offset-3">
-                <input type="password" class="form-control" placeholder="Password" required>
-              </div>
-              <div id="sign-in-button" class="col-md-6 col-md-offset-3">
-                <a href="turn-app.html" class="sign-in-btn btn btn-lg btn-primary btn-block sign-in-button">
+        <div class="account-wall">
+          <form class="form-signin">
+            <div id="email-login" class="col-md-6 col-md-offset-3">
+              <input type="text" class="form-control" placeholder="Email" required autofocus>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+              <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div id="sign-in-button" class="col-md-6 col-md-offset-3">
+              <a href="turn-app.html" class="sign-in-btn btn btn-lg btn-primary btn-block sign-in-button">
                           Log In
                       </a>
-                <!-- <button class="sign-in-btn btn btn-lg btn-primary btn-block sign-in-button" type="submit">
+              <!-- <button class="sign-in-btn btn btn-lg btn-primary btn-block sign-in-button" type="submit">
                         Log in</button> -->
-              </div>
-              <div id="check-box" class="col-md-6 col-md-offset-3">
-                <label class="checkbox">
-                  <input type="checkbox" value="remember-me"> Remember me
-                </label>
-              </div>
-              <div id="need-help" class="col-md-6 col-md-offset-3">
-                <a href="#">Need help? </a>
-              </div>
-              <div id="create-account" class="col-md-6 col-md-offset-3">
-                <a href="get-turnapp.html">Create an account </a>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div id="check-box" class="col-md-6 col-md-offset-3">
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <div id="need-help" class="col-md-6 col-md-offset-3">
+              <a href="#">Need help? </a>
+            </div>
+            <div id="create-account" class="col-md-6 col-md-offset-3">
+              <a href="get-turnapp.html">Create an account </a>
+            </div>
+          </form>
         </div>
-
       </div>
+
     </div>
+  </div>
   <!-- </div> -->
 
 
@@ -148,17 +145,23 @@
       <div class="col-md-6 col-xs-12 ">
         <img src="assets/images/mockup.turn.png" alt="Mock Up Turn.App" width="400px" class=" img-responsive center-block" />
       </div>
-      <div class="col-md-3 col-xs-12" style="padding-top: 6%">
+      <div id="howdoesitwork-div1" class="col-md-3 col-xs-12">
+        <div id="image-howdoesitwork" class="row">
+          <img class="img-responsive center-block icon-img2" src="assets/images/checkmark-circled.svg" alt="checkmark icon" width="40px" />
+        </div>
         <h5 class="howdoesitwork-h5">Create an Account.</h5>
         <p class="howdoesitwork-p">
           Creating an account with us is easy!
           <br> Go to "Get Turn.App Now" and press the button, this will take you a register page.
         </p>
       </div>
-      <div class="col-md-3 col-xs-12" style="padding-top: 5%; padding-left: 20px;">
+      <div id="howdoesitwork-div2" class="col-md-3 col-xs-12">
+        <div class="row">
+          <img class="img-responsive center-block icon-img2" src="assets/images/manage-turns.png" alt="manage icon" width="70px" />
+        </div>
         <h5 class="howdoesitwork-h5">Manage turns from the web.</h5>
         <p class="howdoesitwork-p">
-          Once you have created your account, you will be able to access the system of turns management. With this system you will be able to notify your patients when their turn is approximating.
+          Once you have created your account, you will be able to access the system to notify your patients their appointment status.
         </p>
       </div>
     </div>
@@ -166,75 +169,75 @@
 
   <!--Get an account -->
 
-    <div id="create-an-account" class="container-fluid">
-      <div class="row">
-        <div id="getaccount-col12" class="col-xs-12">
-          <img src="assets/images/turn.app.square.JPG" alt="Turn.App Logo" width="100px" class="img-rounded img-responsive center-block" />
-          <h1 id="create-account-h1">Create an account</h1>
-        </div>
-      </div>
-      <div class="row">
-        <!--Name input-->
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label class="get-font" for="exampleInputName1">Full Name</label>
-            <input type="email" class="form-control form-width" id="exampleInputName1" placeholder="Enter Full Name">
-          </fieldset>
-        </div>
-        <!--end of name input -->
-        <!--username input -->
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label class="get-font" for="exampleInputUsername1">Create Username</label>
-            <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Create Username">
-          </fieldset>
-        </div>
-      </div>
-      <!--end username input-->
-      <!--Email input -->
-      <div class="row">
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label class="get-font" for="exampleInputEmail1">Email</label>
-            <input type="email" class="form-control form-width" id="exampleInputEmail1" placeholder="Enter Email">
-          </fieldset>
-        </div>
-        <!--end of username input -->
-        <!--Repeat email input-->
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label class="get-font" for="exampleInputRepeatEmail1">Repeat Email</label>
-            <input type="email" class="form-control form-width" id="exampleInputRepeatEmail1" placeholder="Repeat Email">
-          </fieldset>
-        </div>
-        <!--end repeat email input-->
-        <!--Office Name input-->
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label class="get-font" for="exampleInputOfficeName1">Office Name</label>
-            <input type="email" class="form-control form-width" id="exampleInputOffcieName1" placeholder="Enter Office Name">
-          </fieldset>
-        </div>
-        <!--end of Office Name input -->
-        <!--Phone Number input-->
-        <div class="col-md-6 col-xs-12 input-background">
-          <fieldset class="form-group">
-            <label class="get-font" for="exampleInputPhoneNumber1">Phone Number</label>
-            <input type="email" class="form-control form-width" id="exampleInputPhoneNumber1" placeholder="Enter Phone Number">
-          </fieldset>
-        </div>
-        <!--end of phone number input-->
-      </div>
-      <div id="create-account-submit" class="row">
-        <div class="col-xs-12">
-          <a href="turn-app.html">
-            <button type="submit" class="btn btn-primary">Create Account</button>
-          </a>
-        </div>
+  <div id="create-an-account" class="container-fluid">
+    <div class="row">
+      <div id="getaccount-col12" class="col-xs-12">
+        <img src="assets/images/turn.app.square.JPG" alt="Turn.App Logo" width="100px" class="img-rounded img-responsive center-block" />
+        <h1 id="create-account-h1">Create an account</h1>
       </div>
     </div>
+    <div class="row">
+      <!--Name input-->
+      <div class="col-md-6 col-xs-12 input-background">
+        <fieldset class="form-group getaccount-fieldset">
+          <label class="get-font" for="exampleInputName1">Full Name</label>
+          <input type="email" class="form-control form-width" id="exampleInputName1" placeholder="Enter Full Name">
+        </fieldset>
+      </div>
+      <!--end of name input -->
+      <!--username input -->
+      <div class="col-md-6 col-xs-12 input-background">
+        <fieldset class="form-group getaccount-fieldset2">
+          <label class="get-font" for="exampleInputUsername1">Create Username</label>
+          <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Create Username">
+        </fieldset>
+      </div>
+    </div>
+    <!--end username input-->
+    <!--Email input -->
+    <div class="row">
+      <div class="col-md-6 col-xs-12 input-background">
+        <fieldset class="form-group getaccount-fieldset">
+          <label class="get-font" for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control form-width" id="exampleInputEmail1" placeholder="Enter Email">
+        </fieldset>
+      </div>
+      <!--end of username input -->
+      <!--Repeat email input-->
+      <div class="col-md-6 col-xs-12 input-background">
+        <fieldset class="form-group getaccount-fieldset2">
+          <label class="get-font" for="exampleInputRepeatEmail1">Repeat Email</label>
+          <input type="email" class="form-control form-width" id="exampleInputRepeatEmail1" placeholder="Repeat Email">
+        </fieldset>
+      </div>
+      <!--end repeat email input-->
+      <!--Office Name input-->
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-12 input-background">
+        <fieldset class="form-group getaccount-fieldset">
+          <label class="get-font" for="exampleInputOfficeName1">Office Name</label>
+          <input type="email" class="form-control form-width" id="exampleInputOffcieName1" placeholder="Enter Office Name">
+        </fieldset>
+      </div>
+      <!--end of Office Name input -->
+      <!--Phone Number input-->
+      <div class="col-md-6 col-xs-12 input-background">
+        <fieldset class="form-group getaccount-fieldset2">
+          <label class="get-font" for="exampleInputPhoneNumber1">Phone Number</label>
+          <input type="email" class="form-control form-width" id="exampleInputPhoneNumber1" placeholder="Enter Phone Number">
+        </fieldset>
+      </div>
+      <!--end of phone number input-->
+    </div>
+    <div id="create-account-submit" class="row">
+      <div class="col-xs-12">
+        <a href="turn-app.html">
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </a>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -243,56 +246,45 @@
   <section>
 
     <div id="contact-us" class="container-fluid">
-
       <div class="row">
         <div class="col-md-12">
           <h1 id="contact-us-h1">Contact us</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-xs-12 col-md-offset-3">
-          <fieldset class="form-group">
+      <form class="form-group" method="POST" action="https://formspree.io/grivera.turn@gmail.com" method="POST">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3">
             <label class="get-font" for="exampleInputName2">Full Name</label>
-            <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Enter Full Name">
-          </fieldset>
+            <input type="text" class="form-control form-width" id="exampleUsername1" placeholder="Enter Full Name" name="name">
+          </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 col-xs-12 col-md-offset-3">
-          <fieldset class="form-group">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3">
             <label class="get-font" for="exampleInputEmail2">Email</label>
-            <input type="email" class="form-control form-width" id="exampleInputEmail2" placeholder="Enter Email">
-          </fieldset>
+            <input type="email" class="form-control form-width" id="exampleInputEmail2" placeholder="Enter Email" name="_replyto">
+          </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6 col-xs-12 col-md-offset-3">
-          <fieldset class="form-group">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3">
             <label class="get-font" for="exampleInputPhone2">Phone</label>
-            <input type="email" class="form-control form-width" id="exampleInputPhone2" placeholder="Enter Phone Number">
-          </fieldset>
+            <input type="text" class="form-control form-width" id="exampleInputPhone2" placeholder="Enter Phone Number" name="name">
+          </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6 col-xs-12 col-md-offset-3">
-          <label class="get-font" for="exampleInputMessage2">Enter your message here.</label>
-          <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here." rows="7"></textarea>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3">
+            <label class="get-font" for="exampleInputMessage2">Enter your message here.</label>
+            <textarea class="form-control" id="message" type="submit" value="Send" name="message" placeholder="Enter your massage for us here." rows="7"></textarea>
+          </div>
         </div>
-      </div>
-
-
-      <div id="send-message-div" class="row">
-        <div class="col-xs-12">
-          <a href="#">
-            <button id="send-message" type="button" class="btn btn-primary btn-block">Send Message</button>
-          </a>
-
+        <div id="send-message-div" class="row">
+          <div class="col-xs-12">
+            <input id="send-message" class="btn btn-primary btn-block" type="submit" value="Send Message">
+          </div>
         </div>
-      </div>
     </div>
+    </form>
   </section>
 </body>
 <!--Footer -->

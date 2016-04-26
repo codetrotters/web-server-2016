@@ -26,6 +26,16 @@ $(document).ready(function() {
     $(this).toggleClass('active');
   });
 
+  $('#sortable').on('click', '.exit-button', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+  });
+
+  $('#sortable').on('click', '.service-button', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+  });
+
   main();
 });
 
@@ -53,7 +63,7 @@ function addRow(index) {
 function rowHtml(dataObject) {
   // tr
   // td
-  var html = "<tr><td><input type='text' id='row-" + dataObject.id + "-age' name='age' value=''></td><td><input type='text' id='row-" + dataObject.id + "-age' name='age' value=''></td><td><input type='text' id='row-" + dataObject.id + "-age' name='age' value=''></td><td class='th-center'><button id='reception" + dataObject.id + "button' class='' type='button' name='button'>Reception</button></td><td class='th-center'><button id='service" + dataObject.id + "button' type='button' name='button'>Service</button></td><td class='th-center'><button id='exit" + dataObject.id + "button' type='button' name='button'>Exit</button><td><button id='exit" + dataObject.id + "button' data-id=" + dataObject.id + " class='delete-button' type='button' name='button'>Delete</button></td></tr>";
+  var html = "<tr><td><input type='text' id='row-" + dataObject.id + "-age' name='age' value=''></td><td><input type='text' id='row-" + dataObject.id + "-age' name='age' value=''></td><td><input type='text' id='row-" + dataObject.id + "-age' name='age' value=''></td><td class='th-center'><button id='reception" + dataObject.id + "button' class='reception-button' type='button' name='button'>Reception</button></td><td class='th-center'><button id='service" + dataObject.id + "button' type='button' class='service-button' name='button'>Service</button></td><td class='th-center'><button id='exit" + dataObject.id + "button' type='button' class='exit-button' name='button'>Exit</button><td><button id='exit" + dataObject.id + "button' data-id=" + dataObject.id + " class='delete-button' type='button' name='button'>Delete</button></td></tr>";
   return html;
 }
 

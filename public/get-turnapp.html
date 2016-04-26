@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/jquery.js" charset="utf-8"></script>
-  <script src="assets/js/parallax.min.js"></script>
   <script src="assets/js/bootstrap.js" charset="utf-8"></script>
   <script src="assets/js/script.js" charset="utf-8"></script>
 </head>
@@ -114,58 +113,46 @@
 
     <!--Contact Us -->
 
-    <div id="contact-us" class="container-fluid">
 
+    <div id="contact-us" class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <h1 id="contact-us-h1">Contact us</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-xs-12 col-md-offset-3">
-          <fieldset class="form-group">
+      <form class="form-group" method="POST" action="https://formspree.io/grivera.turn@gmail.com" method="POST">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3 contactus-inputs">
             <label class="get-font" for="exampleInputName2">Full Name</label>
-            <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Enter Full Name">
-          </fieldset>
+            <input type="text" class="form-control form-width" id="exampleUsername1" placeholder="Enter Full Name" name="name">
+          </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 col-xs-12 col-md-offset-3">
-          <fieldset class="form-group">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3 contactus-inputs">
             <label class="get-font" for="exampleInputEmail2">Email</label>
-            <input type="email" class="form-control form-width" id="exampleInputEmail2" placeholder="Enter Email">
-          </fieldset>
+            <input type="email" class="form-control form-width" id="exampleInputEmail2" placeholder="Enter Email" name="_replyto">
+          </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6 col-xs-12 col-md-offset-3">
-          <fieldset class="form-group">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3 contactus-inputs">
             <label class="get-font" for="exampleInputPhone2">Phone</label>
-            <input type="email" class="form-control form-width" id="exampleInputPhone2" placeholder="Enter Phone Number">
-          </fieldset>
+            <input type="text" class="form-control form-width" id="exampleInputPhone2" placeholder="Enter Phone Number" name="name">
+          </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6 col-xs-12 col-md-offset-3">
-          <label class="get-font" for="exampleInputMessage2">Enter your message here.</label>
-          <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here." rows="7"></textarea>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 col-md-offset-3 contactus-inputs">
+            <label class="get-font" for="exampleInputMessage2">Enter your message here.</label>
+            <textarea class="form-control" id="message" type="submit" value="Send" name="message" placeholder="Enter your massage for us here." rows="7"></textarea>
+          </div>
         </div>
-      </div>
-
-
-      <div id="send-message-div" class="row">
-        <div class="col-xs-12">
-          <a href="#">
-            <button id="send-message" type="button" class="btn btn-primary btn-block">Send Message</button>
-          </a>
-
+        <div id="send-message-div" class="row">
+          <div class="col-xs-12">
+            <input id="send-message" class="btn btn-primary btn-block" type="submit" value="Send Message">
+          </div>
         </div>
-      </div>
     </div>
-
 
 
     <main>

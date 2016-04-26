@@ -3,7 +3,7 @@
   src: url(../fonts/Organo0.ttf);
 }
 main {
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 .navbar-brand {
@@ -283,6 +283,9 @@ main {
 .form-group {
   text-align: center;
 }
+.contactus-inputs{
+  padding-top: 10px;
+}
 .form-width {
   width: 70%;
   margin: 0 auto;
@@ -491,17 +494,38 @@ input {
   display: block;
   box-shadow: 0px 2px 11px;
 }
-#reception-button.active {
+#app-container {
+   box-shadow: 2px 1px 2px 3px rgba(199, 199, 199, 0.91);
+   padding-top: 90px;
+   background-image: url('../images/pexels-photo-64769-large.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   padding-bottom: 30px;
+
+}
+#app-container > div {
+  background-color: rgba(220, 220, 220, 0.27);
+}
+#welcome-app {
+  text-align: center;
+  font-size: 60px;
+  font-family: organo;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.reception-button.active {
   background-image: none;
   background-color: rgb(255, 0, 0);
   color: #ffffff;
 }
-#service-button.active {
+.service-button.active {
   background-image: none;
   background-color: rgb(255, 0, 0);
   color: #ffffff;
 }
-#exit-button.active {
+.exit-button.active {
   background-image: none;
   background-color: rgb(255, 0, 0);
   color: #ffffff;
@@ -510,5 +534,4 @@ input {
 @media (max-width: 768px) {
   .h1-turnapp {
     font-size: 70px;
-  }
 }

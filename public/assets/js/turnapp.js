@@ -16,7 +16,7 @@ $(document).ready(function() {
   });
 
   $('#sortable').on('click', '.delete-button', function() {
-    var id = $(this).data("id");
+    var id = $(this).data('id');
     deleteRow(id);
     main();
   });

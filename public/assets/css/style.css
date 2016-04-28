@@ -8,6 +8,11 @@
   src: url(../fonts/Lato-Regular.ttf);
 }
 
+@font-face {
+  font-family: lato-med;
+  src: url(../fonts/Lato-Medium.ttf);
+}
+
 main {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -61,7 +66,7 @@ main {
 #second-mainp {
   padding-bottom: 20px;
   text-align: center;
-  font-family: lato;
+  font-family: lato-med;
   font-weight: 300;
 }
 #brand-image {
@@ -133,8 +138,7 @@ main {
   margin-bottom: 28px;
 }
 .aboutus-p {
-  font-family: lato;
-  font-weight: 300;
+  font-family: lato-med;
   font-size: 12px;
   height: auto;
   transition: .4s;
@@ -210,8 +214,7 @@ main {
   padding: 10px 30px;;
 }
 .howdoesitwork-p {
-  font-family: lato;
-  font-weight: 300;
+  font-family: lato-med;
   text-align: center;
   height: auto;
   transition: .3s;

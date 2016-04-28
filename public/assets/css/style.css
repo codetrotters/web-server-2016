@@ -1,9 +1,13 @@
 @font-face {
   font-family: organo;
   src: url(../fonts/Organo0.ttf);
-  font-family; lato;
+}
+
+@font-face {
+  font-family: lato;
   src: url(../fonts/Lato-Regular.ttf);
 }
+
 main {
   padding-top: 30px;
   padding-bottom: 30px;

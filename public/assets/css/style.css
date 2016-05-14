@@ -148,7 +148,7 @@
     padding-right: 36px;
   }
   #label-marg2{
-    padding-right: 38px;
+    padding-right: 38px;;
   }
   #subscribe-button {
     margin: 30px 0 40px 0;
@@ -167,7 +167,10 @@
   #subscribe-p{
     font-size: 16px;
     font-family: lato;
-    padding-top: 10px;;;
+    padding-top: 10px;
+  }
+  .subscribe-row{
+    padding-left: 190px;
   }
   #need-help {
   text-align: center;

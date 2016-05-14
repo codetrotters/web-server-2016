@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="assets/css/hover.css">
   <link rel="stylesheet" href="assets/css/animate.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
   <script src="assets/js/jquery.js" charset="utf-8"></script>
+  <!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script> -->
   <script src="assets/js/bootstrap.js" charset="utf-8"></script>
   <script src="assets/js/script.js" charset="utf-8"></script>
 
@@ -41,7 +43,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#" class="clickclass" id="clickme2" style="padding-top: 20px;">Log In</a></li>
             <li><a href="#" class="clickclass" id="clickme" style="padding-top: 20px;">About Us</a></li>
-            <li><a href="#" class="clickclass" id="clickme3" style="padding-top: 20px;">Create Account</a></li>
+            <li><a href="#" class="clickclass" id="clickme3" style="padding-top: 20px;">Subscribe</a></li>
             <li><a href="#" class="clickclass" id="clickme4" style="padding-top: 20px;">Contact Us</a></li>
           </ul>
         </div>
@@ -63,7 +65,7 @@
         <p id="second-mainp">
           This technology-based, customer service optimization platform aids health care professionals in managing patient attendance, providing individualized assistance, and promoting overall satisfaction and well-being.
         </p>
-        <a id="get-button" class="btn btn-primary btn-block" href="get-turnapp.html">
+        <a id="get-button" class="btn btn-primary btn-block" href="#">
                 Get Turn.App Now
               </a>
       </div>
@@ -82,7 +84,7 @@
               <input type="password" class="form-control" placeholder="Password" required>
             </div>
             <div id="sign-in-button" class="col-md-6 col-md-offset-3">
-              <a href="turn-app.html" class="sign-in-btn btn btn-lg btn-primary btn-block sign-in-button">
+              <a href="#" class="sign-in-btn btn btn-lg btn-primary btn-block sign-in-button">
                           Log In
                       </a>
               <!-- <button class="sign-in-btn btn btn-lg btn-primary btn-block sign-in-button" type="submit">
@@ -118,7 +120,7 @@
     </div>
     <div class="row">
       <div class="col-md-4 col-xs-12">
-        <img class="img-responsive center-block icon-img" src="assets/images/UI_PerkIcon_Medic_black.png" alt="example icon" width="50px"/>
+        <img class="img-responsive center-block icon-img" src="assets/images/UI_PerkIcon_Medic_black.png" alt="example icon" width="50px" />
         <p class="aboutus-p">
           Through Turn., health care providers will find a simple yet effective solution to over-crowded waiting areas, uneasy staff workers, all while permitting a personalized approach to tending patients, before they enter the actual doctor’s office.
         </p>
@@ -169,69 +171,133 @@
     </div>
   </div>
 
+  <!--Subscribe -->
+  <!-- Begin MailChimp Signup Form -->
+
+
+  <section id="mc-container">
+    <div id="mc-background" class="container-fluid">
+      <!-- Begin MailChimp Signup Form -->
+      <div class="col-xs-12" id="mc_embed_signup">
+        <form action="//herokuapp.us13.list-manage.com/subscribe/post?u=1492eb5c7f59430c962434246&amp;id=37c7b70b06" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 id="subscribe-h1">Subscribe</h1>
+              <p id="subscribe-p"> If you are interested in our product and want to know more, please subscribe to our mailing list. </p>
+            </div>
+            <div class="col-xs-12">
+              <div id="indicates-required"><span id="asterisk">*</span>Required Field</div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-offset-2">
+              <label class="justify-form1" for="mce-EMAIL">Email Address <span id="asterisk">*</span>
+              </label>
+              <input class="justify-form2" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-offset-2">
+              <label id="label-marg1" class="justify-form1" for="mce-FNAME">First Name </label>
+              <input class="justify-form2" type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-offset-2">
+              <label id="label-marg2" class="justify-form1" for="mce-LNAME">Last Name </label>
+              <input class="justify-form2" type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-offset-2">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_1492eb5c7f59430c962434246_37c7b70b06" tabindex="-1" value="">
+          </div>
+          <div class="clear">
+            <input id="subscribe-button" type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!--End of Mailchimp subscription -->
+
   <!--Get an account -->
 
-  <div id="create-an-account" class="container-fluid">
+  <!-- <div id="create-an-account" class="container-fluid">
     <div class="row">
       <div id="getaccount-col12" class="col-xs-12">
         <img src="assets/images/turn.app.square.JPG" alt="Turn.App Logo" width="100px" class="img-rounded img-responsive center-block" />
         <h1 id="create-account-h1">Create an account</h1>
       </div>
     </div>
-    <div class="row">
-      <!--Name input-->
-      <div class="col-md-6 col-xs-12 input-background">
+    <div class="row"> -->
+  <!--Name input-->
+  <!-- <div class="col-md-6 col-xs-12 input-background">
         <fieldset class="form-group getaccount-fieldset">
           <label class="get-font" for="exampleInputName1">Full Name</label>
           <input type="email" class="form-control form-width" id="exampleInputName1" placeholder="Enter Full Name">
         </fieldset>
-      </div>
-      <!--end of name input -->
-      <!--username input -->
-      <div class="col-md-6 col-xs-12 input-background">
+      </div> -->
+  <!--end of name input -->
+  <!--username input -->
+  <!-- <div class="col-md-6 col-xs-12 input-background">
         <fieldset class="form-group getaccount-fieldset2">
           <label class="get-font" for="exampleInputUsername1">Create Username</label>
           <input type="email" class="form-control form-width" id="exampleUsername1" placeholder="Create Username">
         </fieldset>
       </div>
-    </div>
-    <!--end username input-->
-    <!--Email input -->
-    <div class="row">
+    </div> -->
+  <!--end username input-->
+  <!--Email input -->
+  <!-- <div class="row">
       <div class="col-md-6 col-xs-12 input-background">
         <fieldset class="form-group getaccount-fieldset">
           <label class="get-font" for="exampleInputEmail1">Email</label>
           <input type="email" class="form-control form-width" id="exampleInputEmail1" placeholder="Enter Email">
         </fieldset>
-      </div>
-      <!--end of username input -->
-      <!--Repeat email input-->
-      <div class="col-md-6 col-xs-12 input-background">
+      </div> -->
+  <!--end of username input -->
+  <!--Repeat email input-->
+  <!-- <div class="col-md-6 col-xs-12 input-background">
         <fieldset class="form-group getaccount-fieldset2">
           <label class="get-font" for="exampleInputRepeatEmail1">Repeat Email</label>
           <input type="email" class="form-control form-width" id="exampleInputRepeatEmail1" placeholder="Repeat Email">
         </fieldset>
-      </div>
-      <!--end repeat email input-->
-      <!--Office Name input-->
-    </div>
+      </div> -->
+  <!--end repeat email input-->
+  <!--Office Name input-->
+  <!-- </div>
     <div class="row">
       <div class="col-md-6 col-xs-12 input-background">
         <fieldset class="form-group getaccount-fieldset">
           <label class="get-font" for="exampleInputOfficeName1">Office Name</label>
           <input type="email" class="form-control form-width" id="exampleInputOffcieName1" placeholder="Enter Office Name">
         </fieldset>
-      </div>
-      <!--end of Office Name input -->
-      <!--Phone Number input-->
-      <div class="col-md-6 col-xs-12 input-background">
+      </div> -->
+  <!--end of Office Name input -->
+  <!--Phone Number input-->
+  <!-- <div class="col-md-6 col-xs-12 input-background">
         <fieldset class="form-group getaccount-fieldset2">
           <label class="get-font" for="exampleInputPhoneNumber1">Phone Number</label>
           <input type="email" class="form-control form-width" id="exampleInputPhoneNumber1" placeholder="Enter Phone Number">
         </fieldset>
-      </div>
-      <!--end of phone number input-->
-    </div>
+      </div> -->
+  <!--end of phone number input-->
+  <!-- </div>
     <div id="create-account-submit" class="row">
       <div class="col-xs-12">
         <a href="turn-app.html">
@@ -239,7 +305,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 

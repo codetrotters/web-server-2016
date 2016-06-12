@@ -129,10 +129,10 @@
     padding-right: 10px;
     font-family: lato;
     font-size: 13px;
-    float: left;
     text-align: right;
     display: block;
     clear: left;
+    float: left;
   }
   .justify-form2 {
 margin-top: 14px;
